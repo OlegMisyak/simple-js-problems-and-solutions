@@ -9,6 +9,15 @@
         console.log(one)
         console.log(two)
         e.preventDefault();
+      var response = "Вы ввели " + one + " " + "и " + two + " "
+      if (one > two) {
+        response +="Большим является " + one
+      } else {
+        response +="Большим является " + two 
+
+      } 
+      $("#result").html(response)
+
 
       }
 
@@ -28,7 +37,7 @@
 </form>
 
 <div id="result"></div>
-<script>
+
 
 </body>
 </html>
