@@ -12,8 +12,18 @@
       var response = "Вы ввели " + one + " " + "и " + two + " "
       if (one > two) {
         response +="Большим является " + one
-      } else {
-        response +="Большим является " + two 
+      }
+       
+      else {
+        if (one == two) {
+          response +="Эти числа равны"
+        }
+
+        else {
+          response +="Большим является " + two 
+        }
+
+        
 
       } 
       $("#result").html(response)
@@ -39,5 +49,5 @@
 <div id="result"></div>
 
 
-</body>
+  </body>
 </html>
