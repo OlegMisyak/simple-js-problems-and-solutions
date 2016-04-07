@@ -10,6 +10,10 @@
         console.log(two)
         e.preventDefault();
       var response = "Вы ввели " + one + " " + "и " + two + " "
+    
+    if (!isNaN(one) && !isNaN(two) ) {
+
+
       if (one > two) {
         response +="Большим является " + one
       }
@@ -20,12 +24,19 @@
         }
 
         else {
-          response +="Большим является " + two 
+          response +="Большим является " + two
         }
+      }  
+    } else {
+        response ="Одно или оба значения числом не является. Please enter a numbers"
+    }
+
+
+      
 
         
 
-      } 
+       
       $("#result").html(response)
 
 
